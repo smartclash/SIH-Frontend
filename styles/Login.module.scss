@@ -1,12 +1,9 @@
 $orange: orange;
 $purple: purple;
 
-
-
 .button_Login {
   background-color: $orange
 }
-
 
 .body_container {
   @media screen and (min-width:768px) {
@@ -32,5 +29,5 @@ $purple: purple;
 
 .Login_box {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  ;
+  border-radius: '1.25rem';
 }
