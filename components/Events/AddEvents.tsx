@@ -1,10 +1,7 @@
 import {NextPage} from 'next'
 
 const AddEvents: NextPage = () => (
-    <section className='section'>
-        <div className='mb-5'>
-            <p className='is-size-4 is-bold'>Add Events</p>
-        </div>
+    <>
         <div className='field'>
             <label className='label'>Title</label>
             <div className='control'>
@@ -15,14 +12,15 @@ const AddEvents: NextPage = () => (
         <div className='field'>
             <label className='label'>Sub Heading</label>
             <div className='control'>{/* has-icons-left has-icons-right' */}
-                <input className='input' type='text' placeholder='Sub heading' value=''/>
+                <input className='input' type='text' placeholder='Sub heading'/>
             </div>
         </div>
 
         <div className='field'>
             <label className='label'>Locations</label>
             <div className='control'>{/* has-icons-left has-icons-right' */}
-                <input className='input' type='email' placeholder='Email input' value=''/>
+                {/* Here We need to add Icon for Locations */}
+                <input className='input' type='text' placeholder='Locations' ></input>
             </div>
         </div>
 
@@ -42,7 +40,7 @@ const AddEvents: NextPage = () => (
         <div className='field'>
             <label className='label'>Message</label>
             <div className='control'>
-                <textarea className='textarea' placeholder='Textarea' value=''></textarea>
+                <textarea className='textarea' placeholder='Textarea'></textarea>
             </div>
         </div>
 
@@ -67,7 +65,7 @@ const AddEvents: NextPage = () => (
                 <button className='button is-link is-light'>Cancel</button>
             </div>
         </div>
-    </section>
+    </>
 )
 
 export default AddEvents
