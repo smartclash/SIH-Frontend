@@ -6,5 +6,5 @@ interface Callout {
 export default interface TileInterface {
     heading: string;
     primary: Callout;
-    secondary: Callout;
+    secondary?: Callout;
 }

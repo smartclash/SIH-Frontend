@@ -9,21 +9,23 @@ const Tile: NextPage<TileInterface> = props => (
                 <p className='card-header-title'>{props.heading}</p>
             </div>
             <div className='card-content'>
-                <div className='columns'>
-                    <div className='column is-half'>
+                <div className='columns is-half'>
+                    <div className='column'>
                         <Link href={props.primary.link}>
                             <a className='button is-primary is-outlined is-fullwidth'>
                                 {props.primary.text}
                             </a>
                         </Link>
                     </div>
-                    <div className='column is-half'>
-                        <Link href={props.secondary.link}>
-                            <a className='button is-fullwidth'>
-                                {props.secondary.text}
-                            </a>
-                        </Link>
-                    </div>
+                    {props.secondary ? (
+                        <div className='column'>
+                            <Link href={props.secondary.link}>
+                                <a className='button is-fullwidth'>
+                                    {props.secondary.text}
+                                </a>
+                            </Link>
+                        </div>
+                    ) : ''}
                 </div>
             </div>
         </div>
