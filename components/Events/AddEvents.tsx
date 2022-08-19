@@ -19,7 +19,7 @@ const AddEvents: NextPage = () => (
         <div className='field'>
             <label className='label'>Locations</label>
             <div className='control'>{/* has-icons-left has-icons-right' */}
-                {/* Here We need to add Icon for Locations */}
+                {/* Here We need to add Icon */}
                 <input className='input' type='text' placeholder='Locations' ></input>
             </div>
         </div>
