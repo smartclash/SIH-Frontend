@@ -1,72 +1,70 @@
-import type { NextPage } from 'next'
-import Tile from '@/components/Dashboard/Tile';
-import ITile from '@/interfaces/ITile';
+import type {NextPage} from 'next'
+import Tile from '@/components/Dashboard/Tile'
+import TileInterface from '@/interfaces/TileInterface'
 
-const Tiles: ITile[] = [
+const Tiles: TileInterface[] = [
     {
         heading: 'Events',
         primary: {
             link: '',
-            text: 'Add Event'
+            text: 'Add Event',
         },
         secondary: {
             link: '',
-            text: 'View Events'
-        }
+            text: 'View Events',
+        },
     },
     {
         heading: 'Institutions',
         primary: {
             link: '',
-            text: 'Add Institution'
+            text: 'Add Institution',
         },
         secondary: {
             link: '',
-            text: 'View Institutions'
-        }
+            text: 'View Institutions',
+        },
     },
     {
         heading: 'Notifications',
         primary: {
             link: '',
-            text: 'Add Notification'
+            text: 'Add Notification',
         },
         secondary: {
             link: '',
-            text: 'View Notifications'
-        }
+            text: 'View Notifications',
+        },
     },
     {
         heading: 'Blogs',
         primary: {
             link: '',
-            text: 'Add Blog'
+            text: 'Add Blog',
         },
         secondary: {
             link: '',
-            text: 'View Blogs'
-        }
-    }
+            text: 'View Blogs',
+        },
+    },
 ]
 
-const Dashboard: NextPage = () => {
-    return (
-        <section className="hero has-background-white-bis is-fullheight-with-navbar">
-            <div className="hero-body">
-                <div className="container">
-                    <div className="column is-half is-offset-3">
-                        <div className="mb-6">
-                            <p className="is-size-2">Welcome, Kiridharan</p>
-                        </div>
-
-                        {Tiles.map((tile, index) => (
-                            <Tile {...tile} key={index} />
-                        ))}
+const Dashboard: NextPage = () => (
+    <section className='hero has-background-white-bis is-fullheight-with-navbar'>
+        <div className='hero-body'>
+            <div className='container'>
+                <div className='column is-half is-offset-3'>
+                    <div className='mb-6'>
+                        <p className='is-size-2'>Welcome, Kiridharan</p>
                     </div>
+
+                    {Tiles.map((tile, index) => (
+                        <Tile {...tile} key={index} />
+                    ))}
                 </div>
             </div>
-        </section>
-    );
-}
+        </div>
+    </section>
+)
 
-export default Dashboard;
+export default Dashboard
