@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
-import Tile from '../../components/Tile';
-import ITile from '../../types/TileTypes';
+import Tile from '@/components/Dashboard/Tile';
+import ITile from '@/interfaces/ITile';
 
 const Tiles: ITile[] = [
     {

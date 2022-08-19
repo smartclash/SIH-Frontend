@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
-import ITile from '../types/TileTypes';
+import ITile from '@/interfaces/ITile';
 
 const Tile: NextPage<ITile> = (props) => {
     return (
