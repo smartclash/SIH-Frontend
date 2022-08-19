@@ -3,6 +3,7 @@
     "semicolon": false,
     "rules": {
         "unicorn/filename-case": 0,
-        "import/extensions": "off"
+        "import/extensions": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off"
     }
 }
