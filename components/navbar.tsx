@@ -9,7 +9,7 @@ const Navbar: NextPage = () => (
             <div className='navbar-menu'>
                 <div className='navbar-end'>
                     <a href='#' className='navbar-item'>Dashboard</a>
-                    <a href='#' className='navbar-item'>Regions</a>
+                    <a href='#' className='navbar-item'>Events</a>
                     <div className='navbar-item'>
                         <a className='button is-danger is-outlined'>Logout</a>
                     </div>
