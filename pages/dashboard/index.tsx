@@ -1,30 +1,72 @@
 import type { NextPage } from 'next'
-import TileCustom from '../../components/tileCustom';
+import Tile from '../../components/Tile';
+import ITile from '../../types/TileTypes';
+
+const Tiles: ITile[] = [
+    {
+        heading: 'Events',
+        primary: {
+            link: '',
+            text: 'Add Event'
+        },
+        secondary: {
+            link: '',
+            text: 'View Events'
+        }
+    },
+    {
+        heading: 'Institutions',
+        primary: {
+            link: '',
+            text: 'Add Institution'
+        },
+        secondary: {
+            link: '',
+            text: 'View Institutions'
+        }
+    },
+    {
+        heading: 'Notifications',
+        primary: {
+            link: '',
+            text: 'Add Notification'
+        },
+        secondary: {
+            link: '',
+            text: 'View Notifications'
+        }
+    },
+    {
+        heading: 'Blogs',
+        primary: {
+            link: '',
+            text: 'Add Blog'
+        },
+        secondary: {
+            link: '',
+            text: 'View Blogs'
+        }
+    }
+]
+
 const Dashboard: NextPage = () => {
     return (
+        <section className="hero has-background-white-bis is-fullheight-with-navbar">
+            <div className="hero-body">
+                <div className="container">
+                    <div className="column is-half is-offset-3">
+                        <div className="mb-6">
+                            <p className="is-size-2">Welcome, Kiridharan</p>
+                        </div>
 
-            
-
-<section className="hero has-background-white-bis is-fullheight-with-navbar">
-    <div className="hero-body">
-        <div className="container">
-            <div className="column is-half is-offset-3">
-                <div className="mb-6">
-                    <p className="is-size-2">Welcome, Kiridharan</p>
+                        {Tiles.map((tile, index) => (
+                            <Tile {...tile} key={index} />
+                        ))}
+                    </div>
                 </div>
-                <TileCustom heading="Events" button1="Add Events" button2="View Events" />
-                <TileCustom heading="Notifications" button1="Add Notifications" button2="View Notifications" />
-                <TileCustom heading="Institutions" button1="Add Institutions" button2="View Institutions" />
-                <TileCustom heading="Blog" button1="Add Blog" button2="View Blog" />
-                <TileCustom heading="Timeline" button1="Add Timeline" button2="View Timeline" />
-               
             </div>
-        </div>
-    </div>
-</section>
- 
+        </section>
     );
 }
-
 
 export default Dashboard;

@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
-import Dashboard from './dashboard'
+
 const Home: NextPage = () => {
   return (
-    <section className="hero is-fullheight has-background-info-light ">
-      <div className="hero-body ">
-        <div className="container  ">
+    <section className="hero is-fullheight has-background-info-light">
+      <div className="hero-body">
+        <div className="container">
           <div className="column is-half is-offset-8">
-            <div className="card ">
-              <div className="card-content ">
+            <div className="card">
+              <div className="card-content">
                 <h1 className="title">Auth Page</h1>
                 <form action="">
                   <div className="field">
