@@ -2,7 +2,9 @@ import {NextPage} from 'next'
 
 const AddEvents: NextPage = () => (
     <section className='section'>
-
+        <div className='mb-5'>
+            <p className='is-size-4 is-bold'>Add Events</p>
+        </div>
         <div className='field'>
             <label className='label'>Title</label>
             <div className='control'>
@@ -14,30 +16,18 @@ const AddEvents: NextPage = () => (
             <label className='label'>Sub Heading</label>
             <div className='control'>{/* has-icons-left has-icons-right' */}
                 <input className='input' type='text' placeholder='Sub heading' value=''/>
-                <span className='icon is-small is-left'>
-                    <i className='fas fa-user'></i>
-                </span>
-                <span className='icon is-small is-right'>
-                    <i className='fas fa-check'></i>
-                </span>
             </div>
         </div>
 
         <div className='field'>
-            <label className='label'>Email</label>
+            <label className='label'>Locations</label>
             <div className='control'>{/* has-icons-left has-icons-right' */}
                 <input className='input' type='email' placeholder='Email input' value=''/>
-                <span className='icon is-small is-left'>
-                    <i className='fas fa-envelope'></i>
-                </span>
-                <span className='icon is-small is-right'>
-                    <i className='fas fa-exclamation-triangle'></i>
-                </span>
             </div>
         </div>
 
         <div className='field'>
-            <label className='label'>Subject</label>
+            <label className='label'>Type</label>
             <div className='control'>
                 <div className='select'>
                     <select>
@@ -52,21 +42,11 @@ const AddEvents: NextPage = () => (
         <div className='field'>
             <label className='label'>Message</label>
             <div className='control'>
-                <textarea className='textarea' placeholder='Textarea'></textarea>
+                <textarea className='textarea' placeholder='Textarea' value=''></textarea>
             </div>
         </div>
 
-        <div className='field'>
-            <div className='control'>
-                <label className='checkbox'>
-                    <input type='checkbox'/>
-                    I agree to the
-                    <a href='#'>terms and conditions</a>
-                </label>
-            </div>
-        </div>
-
-        <div className='field'>
+        {/* <div className='field'>
             <div className='control'>
                 <label className='radio'>
                     <input type='radio' name='question'/>
@@ -77,7 +57,7 @@ const AddEvents: NextPage = () => (
                     No
                 </label>
             </div>
-        </div>
+        </div> */}
 
         <div className='field is-grouped'>
             <div className='control'>
