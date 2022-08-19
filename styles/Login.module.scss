@@ -1,0 +1,36 @@
+$orange: orange;
+$purple: purple;
+
+
+
+.button_Login {
+  background-color: $orange
+}
+
+
+.body_container {
+  @media screen and (min-width:768px) {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (max-width:768px) {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // height: fit-content;    
+  }
+}
+
+.Main_logo_container {
+  @media screen and (max-width:768px) {
+    display: none;
+  }
+}
+
+.Login_box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  ;
+}

@@ -1,7 +1,6 @@
 import type {AppProps} from 'next/app'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-
+import Navbar from '@/components/navbar'
+import Footer from '@/components/footer'
 import '../styles/bulma.sass'
 
 function MyApp({Component, pageProps}: AppProps) {
