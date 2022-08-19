@@ -4,7 +4,7 @@ import NDRFLogo from '../assets/National_Disaster_Response_Force_Logo.png'
 import styles from '../styles/Login.module.scss'
 
 const Login: NextPage = () => (
-    <section className='section is-fullheight'>
+    <section className='section is-fullheight-with-navbar'>
         <div className={styles.body_container}>
             <div className={styles.Main_logo_container}>
                 <div className='hero-body column'>
