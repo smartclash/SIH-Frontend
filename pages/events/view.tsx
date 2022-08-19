@@ -1,5 +1,4 @@
 import type {NextPage} from 'next'
-
 import EventViewCard from '@/components/Events/EventCard'
 import ViewEventInterface from '@/interfaces/ViewEventInterface'
 
@@ -44,7 +43,6 @@ const EventViewPage: NextPage = () => (
             </div>
         </div>
     </section>
-
 )
 
 export default EventViewPage
