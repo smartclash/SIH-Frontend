@@ -1,17 +1,17 @@
 import {NextPage} from 'next'
 import InstitutionInterface from '@/interfaces/InstitutionInterface'
-import AddForm from '@/components/AddForm/AddForm'
+import AddForm from '@/components/Forms/AddForm'
 
 const Institution: InstitutionInterface[] = [
     {
         name: 'Institution Name',
         address: 'Address Of Institution',
-        city: 'City Of Institution',
-        state: 'State Of Institution',
-        zip: 'Zip Of Institution',
-        phone: 'Phone Of Institution',
-        email: 'Email Of Institution',
-        website: 'Website Of Institution',
+        city: 'City',
+        state: 'State of Institution',
+        zip: 'Zip of Institution',
+        phone: 'Phone Number',
+        email: 'Email',
+        website: 'Website Institution',
     },
 ]
 
