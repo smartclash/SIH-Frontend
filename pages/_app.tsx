@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import '../styles/bulma.sass'
 
+// @TODO: Should use layouts
 function MyApp({Component, pageProps}: AppProps) {
     return (
         <>
