@@ -1,6 +1,7 @@
 import type {NextPage} from 'next'
 import Tile from '@/components/Dashboard/Tile'
 import TileInterface from '@/interfaces/TileInterface'
+import UserLayout from '@/layouts/UserLayout'
 
 const Tiles: TileInterface[] = [
     {
@@ -50,21 +51,23 @@ const Tiles: TileInterface[] = [
 ]
 
 const Dashboard: NextPage = () => (
-    <section className='hero has-background-white-bis is-fullheight-with-navbar'>
-        <div className='hero-body'>
-            <div className='container'>
-                <div className='column is-half is-offset-3'>
-                    <div className='mb-6'>
-                        <p className='is-size-2'>Welcome, Kiridharan</p>
-                    </div>
+    <UserLayout>
+        <section className='hero has-background-white-bis is-fullheight-with-navbar'>
+            <div className='hero-body'>
+                <div className='container'>
+                    <div className='column is-half is-offset-3'>
+                        <div className='mb-6'>
+                            <p className='is-size-2'>Welcome, Kiridharan</p>
+                        </div>
 
-                    {Tiles.map((tile, index) => (
-                        <Tile {...tile} key={index} />
-                    ))}
+                        {Tiles.map((tile, index) => (
+                            <Tile {...tile} key={index} />
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </UserLayout>
 )
 
 export default Dashboard

@@ -1,6 +1,7 @@
 import type {NextPage} from 'next'
 import EventViewCard from '@/components/Events/EventCard'
 import ViewEventInterface from '@/interfaces/ViewEventInterface'
+import UserLayout from '@/layouts/UserLayout'
 
 const ViewEents: ViewEventInterface[] = [
     {
@@ -27,22 +28,22 @@ const ViewEents: ViewEventInterface[] = [
 ]
 
 const EventViewPage: NextPage = () => (
-    <section className='hero has-background-white-bis is-fullheight-with-navbar box'>
-        <div className='hero-body'>
-            <div className='container'>
-                <div className='column is-half is-offset-3'>
-                    <div className='mb-6'>
-                        <p className='is-size-2'>Welcome, Kiridharan</p>
+    <UserLayout>
+        <section className='hero has-background-white-bis is-fullheight-with-navbar box'>
+            <div className='hero-body'>
+                <div className='container'>
+                    <div className='column is-half is-offset-3'>
+                        <div className='mb-6'>
+                            <p className='is-size-2'>Welcome, Kiridharan</p>
+                        </div>
+                        {ViewEents.map((event, key) => (
+                            <EventViewCard key={key} {...event} />
+                        ))}
                     </div>
-
-                    {ViewEents.map(event => (
-                        <EventViewCard key={event.heading} {...event} />
-                    ))}
-
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </UserLayout>
 )
 
 export default EventViewPage
