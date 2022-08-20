@@ -1,6 +1,6 @@
 import type {AppProps} from 'next/app'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import Navbar from '@/components/User/Navbar'
+import Footer from '@/components/User/Footer'
 import '../styles/bulma.sass'
 
 // @TODO: Should use layouts
