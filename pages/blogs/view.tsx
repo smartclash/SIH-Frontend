@@ -1,5 +1,4 @@
 import type {NextPage} from 'next'
-
 import BlogpageCard from '@/components/Blogs/BlogCard'
 import BlogInterface from '@/interfaces/BlogInterface'
 
@@ -29,17 +28,12 @@ const BlogPageView: NextPage = () => (
                 <div className='mb-6'>
                     <p className='is-size-2'>Recent blogs</p>
                 </div>
-                <div className=''>
-
-                    {ViewBlogs.map(event => (
-                        <BlogpageCard key={event.Title} {...event} />
-                    ))}
-
-                </div>
+                {ViewBlogs.map((event, key) => (
+                    <BlogpageCard key={key} {...event} />
+                ))}
             </div>
         </div>
     </section>
-
 )
 
 export default BlogPageView
