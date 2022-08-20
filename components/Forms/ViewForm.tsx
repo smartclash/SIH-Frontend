@@ -25,7 +25,7 @@ const ViewCard: NextPage<InstitutionInterface> = props => (
             </div>
             <div className='column'>
                 <Link href={props.website}>
-                    <p className='is-bold'>Institution Name: <a>{ props.website}</a></p>
+                    <p className='is-bold'>Institution Website: <a>{ props.website}</a></p>
                 </Link>
             </div>
         </div>
