@@ -24,7 +24,7 @@ const AddVolunteers: NextPage = () => (
                     <div className='column is-half is-offset-3'>
                         <div className='card'>
                             <div className='card-header'>
-                                <p className='card-header-title'>Create Event</p>
+                                <p className='card-header-title'>Create Volunteers</p>
                             </div>
                             <div className='card-content'>
                                 {Volunteers.map((tile, index) => (
