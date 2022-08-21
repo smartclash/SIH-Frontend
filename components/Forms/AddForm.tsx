@@ -1,7 +1,7 @@
 import {NextPage} from 'next'
-import InstitutionInterface from '@/interfaces/InstitutionInterface'
+import FormInterface from '@/interfaces/FormInterface'
 
-const AddForm: NextPage<InstitutionInterface> = props => (
+const AddForm: NextPage<FormInterface> = props => (
     <>
         <div className='field'>
             <label className='label'>{ props.name}</label>

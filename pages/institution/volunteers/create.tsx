@@ -2,20 +2,20 @@ import {NextPage} from 'next'
 import AddForm from '@/components/Forms/AddForm'
 import FormInterface from '@/interfaces/FormInterface'
 
-const Institution: FormInterface[] = [
+const Volunteers: FormInterface[] = [
     {
-        name: 'Institution Name',
-        address: 'Address Of Institution',
+        name: 'Volunteers Name',
+        address: 'Address Of Volunteers',
         city: 'City',
-        state: 'State of Institution',
-        zip: 'Zip of Institution',
+        state: 'State of Volunteers',
+        zip: 'Zip of Volunteers',
         phone: 'Phone Number',
         email: 'Email',
-        website: 'Website Institution',
+        website: 'Website Volunteers',
     },
 ]
 
-const AddInstitutions: NextPage = () => (
+const AddVolunteers: NextPage = () => (
     <section className='hero has-background-white-bis is-fullheight-with-navbar'>
         <div className='hero-body '>
 
@@ -27,7 +27,7 @@ const AddInstitutions: NextPage = () => (
                                 <p className='card-header-title'>Create Event</p>
                             </div>
                             <div className='card-content'>
-                                {Institution.map((tile, index) => (
+                                {Volunteers.map((tile, index) => (
                                     <AddForm {...tile} key={index} />
                                 ))}
                             </div>
@@ -39,4 +39,4 @@ const AddInstitutions: NextPage = () => (
     </section>
 )
 
-export default AddInstitutions
+export default AddVolunteers

@@ -1,8 +1,8 @@
 import {NextPage} from 'next'
 import Link from 'next/link'
-import InstitutionInterface from '@/interfaces/InstitutionInterface'
+import FormInterface from '@/interfaces/FormInterface'
 
-const ViewCard: NextPage<InstitutionInterface> = props => (
+const ViewCard: NextPage<FormInterface> = props => (
     <>
         <div className='card mb-6 column'>
             <div className='column'>

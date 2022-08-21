@@ -1,4 +1,4 @@
-export default interface InstitutionInterface {
+export default interface FormInterface {
     name: string;
     address: string;
     city: string;
