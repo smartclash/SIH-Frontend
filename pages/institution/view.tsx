@@ -43,15 +43,15 @@ const InstitutionView: FormInstitutite[] = [
 const ViewInstitution: NextPage = () => (
     <>
         <section className='hero has-background-white-bis is-fullheight-with-navbar'>
-            <div className='mb-6'>
-                <p className='is-size-2 has-text-centered-desktop'><b>view Institutions</b></p>
-            </div>
-            <div className='hero-body '>
-                < div className='container'>
-                    {InstitutionView.map((tile, index) => (
-                        <ViewCard {...tile} key={index} />
-                    ))}
+            <div className='column is-half is-offset-3'>
+                <div className='mb-6'>
+                    <p className='is-size-2 has-text-centered-desktop'><b>View Institutions</b></p>
                 </div>
+
+                {InstitutionView.map((tile, index) => (
+                    <ViewCard {...tile} key={index} />
+                ))}
+
             </div>
         </section>
     </>
