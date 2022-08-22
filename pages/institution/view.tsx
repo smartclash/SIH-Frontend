@@ -1,38 +1,41 @@
 import {NextPage} from 'next'
-import ViewCard from '@/components/Forms/ViewForm'
-import FormInterface from '@/interfaces/FormInterface'
+import Link from 'next/link'
+import FormInstitutite from '@/interfaces/Institution/Form'
 
-const InstitutionView: FormInterface[] = [
+const ViewCard: NextPage<FormInstitutite> = props => (
+    <>
+        <div className='card mb-6 column'>
+            <div className='column'>
+                <p className='is-bold'>Institution Name: <b>{ props.name}</b></p>
+            </div>
+            <div className='column'>
+                <p className='is-bold'>Institution Address: <b>{ props.address}</b></p>
+            </div>
+            <div className='column'>
+                <Link href={props.website}>
+                    <p className='is-bold'>Institution Website: <a>{ props.website}</a></p>
+                </Link>
+            </div>
+        </div>
+    </>
+)
+
+const InstitutionView: FormInstitutite[] = [
     {
         name: 'Kcg College Of Technology',
         address: 'Karapakkam , bus stop back side , with Lake View',
-        city: 'Chennai',
-        state: 'Tamilnadu',
-        zip: '600096',
-        phone: '9941090444',
-        email: 'kcgcollege@kcgcollege.com',
         website: 'https://www.youtube.com/c/HariBaskarofficial/videos',
 
     },
     {
         name: 'Hindistanda College Of Technology',
         address: 'Karapakkam , bus stop back side , with Lake View',
-        city: 'Chennai',
-        state: 'Tamilnadu',
-        zip: '600096',
-        phone: '9941090444',
-        email: 'hn=indu@@kcgcollege.com',
         website: 'https://www.youtube.com/c/HariBaskarofficial/videos',
 
     },
     {
         name: 'Kcg College Of Technology',
         address: 'Karapakkam , bus stop back side , with Lake View',
-        city: 'Chennai',
-        state: 'Tamilnadu',
-        zip: '600096',
-        phone: '9941090444',
-        email: 'kcgcollege@kcgcollege.com',
         website: 'https://www.youtube.com/c/HariBaskarofficial/videos',
 
     },

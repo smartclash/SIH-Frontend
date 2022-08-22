@@ -1,16 +1,38 @@
 import {NextPage} from 'next'
-import AddForm from '@/components/Forms/AddForm'
-import FormInterface from '@/interfaces/FormInterface'
+import FormInstitutite from '@/interfaces/Institution/Form'
 
-const Institution: FormInterface[] = [
+const AddForm: NextPage<FormInstitutite> = props => (
+    <>
+        <div className='field'>
+            <label className='label'>{ props.name}</label>
+            <div className='control'>
+                <input className='input' type='text' placeholder='Institution name'/>
+            </div>
+        </div>
+        <div className='field'>
+            <label className='label'>{ props.address}</label>
+            <div className='control'>
+                <input className='input' type='text' placeholder='Search Insitution'/>
+            </div>
+        </div>
+        <div className='field'>
+            <label className='label'>{props.website}</label>
+            <div className='control'>
+                <input className='input' type='text' placeholder='website Link'/>
+            </div>
+        </div>
+        <div className='field is-grouped'>
+            <div className='control'>
+                <button className='button is-primary'>Submit</button>
+            </div>
+        </div>
+    </>
+)
+
+const Institution: FormInstitutite[] = [
     {
         name: 'Institution Name',
         address: 'Address Of Institution',
-        city: 'City',
-        state: 'State of Institution',
-        zip: 'Zip of Institution',
-        phone: 'Phone Number',
-        email: 'Email',
         website: 'Website Institution',
     },
 ]
