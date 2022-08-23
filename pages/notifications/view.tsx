@@ -1,6 +1,6 @@
 import type {NextPage} from 'next'
 import styles from '../../styles/Notifications.module.scss'
-import ViewNotificationCard from '@/components/Notifications/ViewNotificationCard'
+import ViewNotificationCard from '@/components/Notifications/ViewCard'
 import NotificationInterface from '@/interfaces/NotificationInterface'
 
 const Viewnotification: NotificationInterface[] = [

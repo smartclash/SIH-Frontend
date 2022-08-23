@@ -12,10 +12,11 @@ const ViewNotificationCard: NextPage<NotificationInterface> = props => (
                 <p className='card-header-title is-size-5'>
                     { props.Title }
                 </p>
-
-                <p className='card-header-title is-flex is-justify-content-flex-end'>
-                    @{ props.Author }
-                </p>
+                <Link href={''}>
+                    <p className='card-header-title is-flex is-justify-content-flex-end'>
+                        @{ props.Author }
+                    </p>
+                </Link>
             </header>
 
             <div className='card-content' style={{padding: '1rem'}}>

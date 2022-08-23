@@ -1,6 +1,6 @@
 import type {NextPage} from 'next'
 
-import BlogpageCard from '@/components/Blogs/ViewBlogCard'
+import BlogpageCard from '@/components/Blogs/ViewCard'
 import BlogInterface from '@/interfaces/BlogInterface'
 
 const ViewBlogs: BlogInterface[] = [
