@@ -28,9 +28,9 @@ const AddForm: NextPage<FormVolunteer> = props => (
             </div>
         </div>
 
-        <div className='field is-grouped'>
+        <div className='field'>
             <div className='control'>
-                <button className='button is-primary'>Submit</button>
+                <input type='submit' value='Submit' className='button is-primary is-outlined is-fullwidth' />
             </div>
         </div>
     </>
@@ -57,9 +57,35 @@ const AddVolunteers: NextPage = () => (
                                 <p className='card-header-title'>Create Volunteers</p>
                             </div>
                             <div className='card-content'>
-                                {Volunteers.map((tile, index) => (
-                                    <AddForm {...tile} key={index} />
-                                ))}
+                                <div className='field'>
+                                    <label className='label'>Volunteer Name</label>
+                                    <div className='control'>
+                                        <input className='input' type='text' placeholder='Volunteer name'/>
+                                    </div>
+                                </div>
+                                <div className='field'>
+                                    <label className='label'>Email ID</label>
+                                    <div className='control'>
+                                        <input className='input' type='email' placeholder='Email ID'/>
+                                    </div>
+                                </div>
+                                <div className='field'>
+                                    <label className='label'>Phone No</label>
+                                    <div className='control'>
+                                        <input className='input' type='tel' placeholder='Phone Number'/>
+                                    </div>
+                                </div>
+                                <div className='field'>
+                                    <label className='label'>Password</label>
+                                    <div className='control'>
+                                        <input className='input' type='password' placeholder='Password'/>
+                                    </div>
+                                </div>
+                                <div className='field'>
+                                    <div className='control'>
+                                        <input type='submit' value='Submit' className='button is-primary is-outlined is-fullwidth' />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
