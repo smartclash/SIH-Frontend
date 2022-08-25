@@ -13,7 +13,7 @@ const Navbar: NextPage = () => (
                         <a className='navbar-item'>Dashboard</a>
                     </Link>
                     <Link href='/events/view'>
-                        <a  className='navbar-item'>Events</a>
+                        <a className='navbar-item'>Events</a>
                     </Link>
                     <Link href='/blogs/view.tsx'>
                         <a className='navbar-item'>Blogs</a>
