@@ -40,7 +40,6 @@ const Institution: FormInstitutite[] = [
 const AddInstitutions: NextPage = () => (
     <section className='hero has-background-white-bis is-fullheight-with-navbar'>
         <div className='hero-body '>
-
             <div className='container'>
                 <div className='columns'>
                     <div className='column is-half is-offset-3'>
