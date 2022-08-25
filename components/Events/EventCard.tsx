@@ -6,9 +6,11 @@ const EventViewCard: NextPage<ViewEventInterface> = props => (
     <>
         <div className='card mb-6'>
             <header className='card-header'>
-                <p className='card-header-title'>
-                    { props.heading}
-                </p>
+                <Link href='#'>
+                    <a className='card-header-title'>
+                        { props.heading}
+                    </a>
+                </Link>
                 <button className='card-header-icon' aria-label='more options'>
                     <span className='icon'>
                         <i className='fas fa-angle-down' aria-hidden='true'></i>
@@ -23,7 +25,7 @@ const EventViewCard: NextPage<ViewEventInterface> = props => (
             </div>
             <footer className='card-footer'>
                 <Link href={props.link}>
-                    <a href='#' className='card-footer-item'>Location</a>
+                    <a href='#' className='card-footer-item'>Details</a>
                 </Link>
             </footer>
         </div>
