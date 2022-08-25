@@ -1,6 +1,6 @@
 import {NextPage} from 'next'
 import Link from 'next/link'
-import ViewEventInterface from '@/interfaces/ViewEventInterface'
+import ViewEventInterface from '@/interfaces/events/ViewEventInterface'
 
 const EventViewCard: NextPage<ViewEventInterface> = props => (
     <>

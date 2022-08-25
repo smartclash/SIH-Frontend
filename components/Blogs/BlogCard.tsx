@@ -1,6 +1,6 @@
 import {NextPage} from 'next'
 import Link from 'next/link'
-import BlogInterface from '@/interfaces/BlogInterface'
+import BlogInterface from '@/interfaces/Blogs/BlogInterface'
 
 const BlogCard: NextPage<BlogInterface> = props => (
     <>

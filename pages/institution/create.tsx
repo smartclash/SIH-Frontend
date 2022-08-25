@@ -21,9 +21,9 @@ const AddForm: NextPage<FormInstitutite> = props => (
                 <input className='input' type='text' placeholder='website Link'/>
             </div>
         </div>
-        <div className='field is-grouped'>
+        <div className='field pt-2'>
             <div className='control'>
-                <button className='button is-primary'>Submit</button>
+                <input type='submit' value='Submit' className='button is-primary is-outlined is-fullwidth' />
             </div>
         </div>
     </>

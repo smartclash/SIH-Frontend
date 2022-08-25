@@ -28,9 +28,9 @@ const AddForm: NextPage<FormVolunteer> = props => (
             </div>
         </div>
 
-        <div className='field is-grouped'>
+        <div className='field'>
             <div className='control'>
-                <button className='button is-primary'>Submit</button>
+                <input type='submit' value='Submit' className='button is-primary is-outlined is-fullwidth' />
             </div>
         </div>
     </>

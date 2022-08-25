@@ -1,6 +1,6 @@
 import type {NextPage} from 'next'
 import EventViewCard from '@/components/Events/EventCard'
-import ViewEventInterface from '@/interfaces/ViewEventInterface'
+import ViewEventInterface from '@/interfaces/events/ViewEventInterface'
 
 const ViewEents: ViewEventInterface[] = [
     {
