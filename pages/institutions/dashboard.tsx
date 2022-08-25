@@ -6,44 +6,44 @@ const Tiles: TileInterface[] = [
     {
         heading: 'Events',
         primary: {
-            link: '',
+            link: '/events/create',
             text: 'Add Event',
         },
         secondary: {
-            link: '',
+            link: '/events/view',
             text: 'View Events',
         },
     },
     {
         heading: 'Volunteers',
         primary: {
-            link: '',
+            link: '/volunteers/create',
             text: 'Add Volunteers',
         },
         secondary: {
-            link: '',
+            link: '/volunteers/view',
             text: 'View Volunteers',
         },
     },
     {
         heading: 'Notifications',
         primary: {
-            link: '',
+            link: '/notifications/create',
             text: 'Add Notification',
         },
         secondary: {
-            link: '',
+            link: '/notifications/view',
             text: 'View Notifications',
         },
     },
     {
         heading: 'Blogs',
         primary: {
-            link: '',
+            link: '/blogs/create',
             text: 'Add Blog',
         },
         secondary: {
-            link: '',
+            link: '/blogs/view',
             text: 'View Blogs',
         },
     },
