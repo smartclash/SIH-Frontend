@@ -15,10 +15,10 @@ const Navbar: NextPage = () => (
                     <Link href='/events/view'>
                         <a className='navbar-item'>Events</a>
                     </Link>
-                    <Link href='/blogs/view.tsx'>
+                    <Link href='/blogs/view'>
                         <a className='navbar-item'>Blogs</a>
                     </Link>
-                    <Link href='#'>
+                    <Link href='/notifications/view'>
                         <a className='navbar-item'>Notifications</a>
                     </Link>
                     <div className='navbar-item'>
