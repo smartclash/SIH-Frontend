@@ -53,7 +53,7 @@ const EventPage: NextPage = () => (
                                 </div>
                                 <div className='field'>
                                     <div className='control'>
-                                        <input className='button is-primary is-outlined is-fullwidth' value='Submit' />
+                                        <input type='submit' value='Submit' className='button is-primary is-outlined is-fullwidth' />
                                     </div>
                                 </div>
                             </div>
