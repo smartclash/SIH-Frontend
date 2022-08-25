@@ -40,9 +40,11 @@ const ViewInstitution: NextPage = () => {
     const isNdrfAdmin = true
     return (
         <>
-            <section className = 'section'>
+            
                 <section className='hero has-background-white-bis is-fullheight-with-navbar'>
-                    <div className='column is-half is-offset-3'>
+                    <section className = 'section'>
+                      <div className='column is-half is-offset-3'>
+                       
                         <div className='mb-6'>
                             <p className='is-size-2 has-text-centered-desktop'><b>Institutions details</b></p>
                         </div>
