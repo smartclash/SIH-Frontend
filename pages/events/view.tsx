@@ -27,7 +27,7 @@ const ViewEents: ViewEventInterface[] = [
 ]
 
 const EventViewPage: NextPage = () => (
-    <section className='hero has-background-white-bis is-fullheight-with-navbar box'>
+    <section className='hero has-background-white-bis is-fullheight-with-navbar'>
         <div className='hero-body'>
             <div className='container'>
                 <div className='column is-half is-offset-3'>
