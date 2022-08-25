@@ -19,9 +19,9 @@ const Login: NextPage = () => (
                         <p className='is-size-2 pb-4'>Login</p>
 
                         <div className='field'>
-                            <label className='label'>Email</label>
+                            <label className='label'>Phone</label>
                             <div className='control'>
-                                <input className='input is-medium' type='email' placeholder='e.g alexsmith@gmail.com' />
+                                <input className='input is-medium' type='tel' placeholder='e.g alexsmith@gmail.com' />
                             </div>
                         </div>
 
