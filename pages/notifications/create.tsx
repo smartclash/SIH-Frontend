@@ -40,20 +40,19 @@ const Create = () => {
                         </div>
                         {
                             (L1Selected) ? (
-                                <div className='field'>
-                                    <label className='label'>Message</label>
-                                    <div className='control'>
-                                        <textarea className='textarea' placeholder='Express your thought' style={{minHeight: '15em'}}></textarea>
-                                    </div>
-                                </div>
+                                <></>
                             ) : (
                                 <div className='field mb-5'>
-                                    <label className='label'>⚠️ This notification make a emergency call to everyone ⚠️</label>
+                                    <label className='label has-text-danger'>⚠️ This notification make a emergency call to everyone ⚠️</label>
                                 </div>
-
                             )
-
                         }
+                    </div>
+                    <div className='field'>
+                        <label className='label'>Message</label>
+                        <div className='control'>
+                            <textarea className='textarea' placeholder='Express your thought' style={{minHeight: '15em'}}></textarea>
+                        </div>
                     </div>
                     <div className='field'>
                         <div className='control'>

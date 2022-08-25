@@ -6,7 +6,7 @@ import NotificationInterface from '@/interfaces/Notifications/NotificationInterf
 
 const ViewNotificationCard: NextPage<NotificationInterface> = props => (
     <>
-        <div className='card m-2'>
+        <div className='card'>
             <header className='card-header is-flex is-justify-content-space-between'>
 
                 <p className='card-header-title is-size-5'>
@@ -87,45 +87,50 @@ const Viewnotification: NotificationInterface[] = [
 ]
 
 const NotificationPageView: NextPage = () => (
-    <section className='hero has-background-white-bis is-fullheight-with-navbar box'>
+    <section className='hero has-background-white-bis is-fullheight-with-navbar'>
         <div className='hero-body'>
             <div className='container'>
-                <div className={styles.mainbar}>
-                    <div className='mb-6'>
-                        <p className='is-size-2'>Recent Notifications</p>
-                    </div>
-                    <div className = {styles.search_filter_bar}>
-                        <div className='level-item'>
-                            <div className='field has-addons'>
-                                <p className='control'>
-                                    <input className='input' type='text' placeholder='Find a post' />
-                                </p>
-                                <p className='control'>
-                                    <button className='button'>
-                                        Search
-                                    </button>
-                                </p>
+                <div className='columns is-multiline'>
+                    <div className='column is-half is-offset-3'>
+                        <h1 className='is-size-3 mb-3'>Notifications</h1>
+                        <div className='card'>
+                            <div className='card-content'>
+                                <div className='columns'>
+                                    <div className='column is-half'>
+                                        <div className='field'>
+                                            <div className='control is-expanded'>
+                                                <div className='select is-fullwidth'>
+                                                    <select>
+                                                        <option value='' disabled selected>Filter</option>
+                                                        <option value='All Notifications'>All Notifications</option>
+                                                        <option value='NDRF Admins'>NDRF Admins</option>
+                                                        <option value='Institutions'>Institutions</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='column is-half'>
+                                        <div className='field has-addons'>
+                                            <p className='control'>
+                                                <input className='input' type='text' placeholder='Find a post' />
+                                            </p>
+                                            <p className='control'>
+                                                <button className='button'>
+                                                    Search
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div className='select mr-2'>
-                            <select>
-                                <option value=''>Filter</option>
-                                <option value='All Notifications'>All Notifications</option>
-                                <option value='NDRF Admins'>NDRF Admins</option>
-                                <option value='Institutions'>Institutions</option>
-                            </select>
-                        </div>
-
                     </div>
-                </div>
-                <div className=''>
                     {
-                    // To reverse the array because the notifications show the recent in the top
-                    // But it show error when i refersh the page
-                    // Viewnotification.reverse().map((notification, index) => (
                         Viewnotification.map(event => (
-                            <ViewNotificationCard key={event.Title} {...event} />
+                            <div className='column is-half is-offset-3'>
+                                <ViewNotificationCard key={event.Title} {...event} />
+                            </div>
                         ))
                     }
                 </div>
