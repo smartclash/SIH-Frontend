@@ -1,6 +1,9 @@
 import type {NextPage} from 'next'
+import {GetServerSideProps} from 'next'
 import Tile from '@/components/Dashboard/Tile'
 import TileInterface from '@/interfaces/TileInterface'
+import auth from '@/lib/auth'
+import UserInterface from '@/interfaces/UserInterface'
 
 const Tiles: TileInterface[] = [
     {
@@ -49,7 +52,11 @@ const Tiles: TileInterface[] = [
     },
 ]
 
-const Dashboard: NextPage = () => (
+interface Props {
+    user: UserInterface;
+}
+
+const Dashboard: NextPage<Props> = ({user}) => (
     <section className='hero has-background-white-bis is-fullheight-with-navbar'>
         <div className='hero-body'>
             <div className='container'>
@@ -57,7 +64,6 @@ const Dashboard: NextPage = () => (
                     <div className='mb-6'>
                         <p className='is-size-2'>Welcome, Kiridharan</p>
                     </div>
-
                     {Tiles.map((tile, index) => (
                         <Tile {...tile} key={index} />
                     ))}
@@ -66,5 +72,7 @@ const Dashboard: NextPage = () => (
         </div>
     </section>
 )
+
+export const getServerSideProps: GetServerSideProps = auth
 
 export default Dashboard
