@@ -1,4 +1,5 @@
 import type {NextPage} from 'next'
+import Link from 'next/link'
 
 const Navbar: NextPage = () => (
     <nav className='navbar'>
@@ -8,12 +9,22 @@ const Navbar: NextPage = () => (
             </div>
             <div className='navbar-menu'>
                 <div className='navbar-end'>
-                    <a href='#' className='navbar-item'>Dashboard</a>
-                    <a href='#' className='navbar-item'>Events</a>
-                    <a href='#' className='navbar-item'>Blog</a>
-                    <a href='#' className='navbar-item'>Notification</a>
+                    <Link href="/admin/dashboard">
+                        <a className='navbar-item'>Dashboard</a>
+                    </Link>
+                    <Link href="/events/view">
+                        <a  className='navbar-item'>Events</a>
+                    </Link>
+                    <Link href="/blogs/view.tsx">
+                        <a className='navbar-item'>Blogs</a>
+                    </Link>
+                    <Link href="#">
+                        <a className='navbar-item'>Notifications</a>
+                    </Link>
                     <div className='navbar-item'>
-                        <a className='button is-danger is-outlined'>Logout</a>
+                        <Link href="/login">
+                            <a className='button is-danger is-outlined'>Logout</a>
+                        </Link>
                     </div>
                 </div>
             </div>
