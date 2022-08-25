@@ -51,7 +51,7 @@ const Create = () => {
                     <div className='field'>
                         <label className='label'>Message</label>
                         <div className='control'>
-                            <textarea className='textarea' placeholder='Express your thought' style={{minHeight: '15em'}}></textarea>
+                            <textarea className='textarea' placeholder='Express your thought' rows={10}></textarea>
                         </div>
                     </div>
                     <div className='field'>
