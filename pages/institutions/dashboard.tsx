@@ -15,14 +15,14 @@ const Tiles: TileInterface[] = [
         },
     },
     {
-        heading: 'Volunteer',
+        heading: 'Volunteers',
         primary: {
-            link: '/volunteer/create',
-            text: 'Add Institution',
+            link: '/volunteers/create',
+            text: 'Add Volunteers',
         },
         secondary: {
-            link: '/volunteer/view',
-            text: 'View Institutions',
+            link: '/volunteers/view',
+            text: 'View Volunteers',
         },
     },
     {

@@ -17,11 +17,11 @@ const Tiles: TileInterface[] = [
     {
         heading: 'Institutions',
         primary: {
-            link: '/institution/create',
+            link: '/institutions/create',
             text: 'Add Institution',
         },
         secondary: {
-            link: '/institution/view',
+            link: '/institutions/view',
             text: 'View Institutions',
         },
     },
