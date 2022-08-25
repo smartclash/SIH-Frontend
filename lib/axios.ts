@@ -1,7 +1,6 @@
-import Axios from 'axios'
+import axiosInstance from 'axios'
 
-const axios = Axios.create({
-    // eslint-disable-next-line @typescript-eslint/naming-convention
+const axios = axiosInstance.create({
     baseURL: 'http://localhost:8000/api/',
     headers: {
         'X-Requested-With': 'XMLHttpRequest',
