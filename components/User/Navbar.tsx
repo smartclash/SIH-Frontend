@@ -9,20 +9,20 @@ const Navbar: NextPage = () => (
             </div>
             <div className='navbar-menu'>
                 <div className='navbar-end'>
-                    <Link href="/admin/dashboard">
+                    <Link href='/admin/dashboard'>
                         <a className='navbar-item'>Dashboard</a>
                     </Link>
-                    <Link href="/events/view">
+                    <Link href='/events/view'>
                         <a  className='navbar-item'>Events</a>
                     </Link>
-                    <Link href="/blogs/view.tsx">
+                    <Link href='/blogs/view.tsx'>
                         <a className='navbar-item'>Blogs</a>
                     </Link>
-                    <Link href="#">
+                    <Link href='#'>
                         <a className='navbar-item'>Notifications</a>
                     </Link>
                     <div className='navbar-item'>
-                        <Link href="/login">
+                        <Link href='/login'>
                             <a className='button is-danger is-outlined'>Logout</a>
                         </Link>
                     </div>
