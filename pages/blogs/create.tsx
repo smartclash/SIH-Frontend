@@ -1,6 +1,12 @@
-import type {NextPage} from 'next'
+import type {GetServerSideProps, NextPage} from 'next'
+import auth from '@/lib/auth'
+import UserInterface from '@/interfaces/UserInterface'
 
-const BlogPage: NextPage = () => (
+interface Props {
+    user: UserInterface;
+}
+
+const BlogPage: NextPage<Props> = props => (
     <section className='hero has-background-white-bis is-fullheight-with-navbar'>
         <div className='hero-body'>
             <div className='container'>
@@ -38,5 +44,7 @@ const BlogPage: NextPage = () => (
         </div>
     </section>
 )
+
+export const getServerSideProps: GetServerSideProps = auth
 
 export default BlogPage
