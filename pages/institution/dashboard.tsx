@@ -32,7 +32,7 @@ const Tiles: TileInterface[] = [
             text: 'Add Notification',
         },
         secondary: {
-            link: '/notification/view',
+            link: '/notifications/view',
             text: 'View Notifications',
         },
     },
