@@ -45,7 +45,7 @@ const ViewInstitution: NextPage = () => (
         <section className='hero has-background-white-bis is-fullheight-with-navbar'>
             <div className='column is-half is-offset-3'>
                 <div className='mb-6'>
-                    <p className='is-size-2 has-text-centered-desktop'><b>View Institutions</b></p>
+                    <h1 className='is-size-3 mb-2'>View Institutions</h1>
                 </div>
 
                 {InstitutionView.map((tile, index) => (
