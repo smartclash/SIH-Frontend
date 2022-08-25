@@ -123,9 +123,9 @@ const NotificationPageView: NextPage = () => (
                         </div>
                     </div>
                     {
-                        Viewnotification.map(event => (
+                        Viewnotification.map((event, key) => (
                             <div className='column is-half is-offset-3'>
-                                <ViewNotificationCard key={event.Title} {...event} />
+                                <ViewNotificationCard key={key} {...event} />
                             </div>
                         ))
                     }
@@ -133,7 +133,6 @@ const NotificationPageView: NextPage = () => (
             </div>
         </div>
     </section>
-
 )
 
 export default NotificationPageView
