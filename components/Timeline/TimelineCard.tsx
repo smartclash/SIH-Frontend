@@ -1,5 +1,5 @@
-import { NextPage } from "next"
-import TimelineInterface from "@/interfaces/timeline/TimelineInterface"
+import {NextPage} from 'next'
+import TimelineInterface from '@/interfaces/timeline/TimelineInterface'
 
 const TimeLineCard: NextPage<TimelineInterface> = props => (
     <>

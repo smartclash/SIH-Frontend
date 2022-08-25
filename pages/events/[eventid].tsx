@@ -1,5 +1,5 @@
 import type {NextPage} from 'next'
-import timelineinterface from '@/interfaces/timeline/TimelineInterface'
+import TimelineInterface from '@/interfaces/timeline/TimelineInterface'
 import ViewEventInterface from '@/interfaces/events/ViewEventInterface'
 
 const ViewEents: ViewEventInterface[] = [
@@ -26,25 +26,25 @@ const ViewEents: ViewEventInterface[] = [
     },
 ]
 
-const TimeLine: timelineinterface[] = [
-    {title: 'Disaster Relief', message: 'Funding at your fingertips', date: '2020-01-01'},
-    {title: 'Flood at karapakkam', message: 'Flood in KCG college voluntary needed', date: '2020-01-01'},
-    {title: 'Contest for NCC', message: 'Best NCC institute in India', date: '2020-01-01'},
+const TimeLine: TimelineInterface[] = [
+    {title: 'Disaster Relief', message: 'Funding at your fingertips', start: '2020-01-01'},
+    {title: 'Flood at karapakkam', message: 'Flood in KCG college voluntary needed', start: '2020-01-01'},
+    {title: 'Contest for NCC', message: 'Best NCC institute in India', start: '2020-01-01'},
 
 ]
-const timelineViewCard: NextPage<timelineinterface> = props => (
+const TimelineCard: NextPage<TimelineInterface> = props => (
     <>
         <div className='card mb-6'>
             <div className='card-content'>
                 <div className='content'>
                     <p>
-                        title : { ViewEents[0].subheading}
+                        title : {props.title}
                     </p>
                     <p>
-                        message : { ViewEents[0].description}
+                        message : { props.message}
                     </p>
                     <p>
-                        Start At: { ViewEents[0].description}
+                        Start At: { props.start}
                     </p>
                 </div>
             </div>
@@ -53,7 +53,7 @@ const timelineViewCard: NextPage<timelineinterface> = props => (
     </>
 )
 
-const EventViewPage: NextPage = () => (
+const TimeLineViewPage: NextPage = () => (
     <section className='hero has-background-white-bis is-fullheight-with-navbar'>
         <div className='hero-body'>
             <div className='container'>
@@ -89,14 +89,13 @@ const EventViewPage: NextPage = () => (
                         <p className='is-size-2'>TimeLine</p>
                     </div>
 
-                    {ViewEents.map(event => (
-                        <timelineViewCard key={event.heading} {...event} />
+                    {TimeLine.map(event => (
+                        <TimelineCard key={event.title} {...event} />
                     ))}
-
                 </div>
             </div>
         </div>
     </section>
 )
 
-export default EventViewPage
+export default TimeLineViewPage
