@@ -1,5 +1,7 @@
-import type {NextPage} from 'next'
+import type {GetServerSideProps, NextPage} from 'next'
 import {useState} from 'react'
+import UserInterface from '@/interfaces/UserInterface'
+import auth from '@/lib/auth'
 
 const Create = () => {
     const [L1Selected, setL1Selected] = useState(true)
@@ -65,7 +67,11 @@ const Create = () => {
     )
 }
 
-const NotificationsPage: NextPage = () => (
+interface Props {
+    user: UserInterface;
+}
+
+const NotificationsPage: NextPage<Props> = props => (
     <section className='hero has-background-white-bis is-fullheight-with-navbar'>
         <div className='hero-body'>
             <div className='container'>
@@ -84,5 +90,6 @@ const NotificationsPage: NextPage = () => (
     </section>
 )
 
-export default NotificationsPage
+export const getServerSideProps: GetServerSideProps = auth
 
+export default NotificationsPage

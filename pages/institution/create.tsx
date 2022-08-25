@@ -1,5 +1,7 @@
-import {NextPage} from 'next'
+import {GetServerSideProps, NextPage} from 'next'
 import FormInstitutite from '@/interfaces/Institution/Form'
+import auth from '@/lib/auth'
+import UserInterface from '@/interfaces/UserInterface'
 
 const AddForm: NextPage<FormInstitutite> = props => (
     <>
@@ -37,10 +39,13 @@ const Institution: FormInstitutite[] = [
     },
 ]
 
-const AddInstitutions: NextPage = () => (
-    <section className='hero has-background-white-bis is-fullheight-with-navbar'>
-        <div className='hero-body '>
+interface Props {
+    user: UserInterface;
+}
 
+const AddInstitutions: NextPage<Props> = props => (
+    <section className='hero has-background-white-bis is-fullheight-with-navbar'>
+        <div className='hero-body'>
             <div className='container'>
                 <div className='columns'>
                     <div className='column is-half is-offset-3'>
@@ -60,5 +65,7 @@ const AddInstitutions: NextPage = () => (
         </div>
     </section>
 )
+
+export const getServerSideProps: GetServerSideProps = auth
 
 export default AddInstitutions

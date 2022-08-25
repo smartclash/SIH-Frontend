@@ -62,7 +62,7 @@ const Dashboard: NextPage<Props> = ({user}) => (
             <div className='container'>
                 <div className='column is-half is-offset-3'>
                     <div className='mb-6'>
-                        <p className='is-size-2'>Welcome, Kiridharan</p>
+                        <p className='is-size-2'>Welcome, {user.name}</p>
                     </div>
                     {Tiles.map((tile, index) => (
                         <Tile {...tile} key={index} />
