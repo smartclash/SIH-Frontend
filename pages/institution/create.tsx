@@ -1,6 +1,5 @@
 import {NextPage} from 'next'
 
-
 const AddInstitutions: NextPage = () => (
     <section className='hero has-background-white-bis is-fullheight-with-navbar'>
         <div className='hero-body '>
