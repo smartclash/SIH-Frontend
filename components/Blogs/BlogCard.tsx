@@ -5,7 +5,7 @@ import BlogInterface from '@/interfaces/Blogs/BlogInterface'
 const BlogCard: NextPage<BlogInterface> = props => (
     <>
         <div className='card mb-6'>
-            <header className='card-header is-flex is-justify-content-space-between'>
+            <header className='card-header'>
                 <Link href={`/blogs/${props.Author}`}>
                     <p className='card-header-title is-size-5'>
                         { props.Title }
@@ -24,6 +24,7 @@ const BlogCard: NextPage<BlogInterface> = props => (
                 </div>
             </Link>
         </div>
+
     </>
 )
 

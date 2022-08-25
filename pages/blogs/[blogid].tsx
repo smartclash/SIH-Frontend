@@ -118,21 +118,19 @@ const ViewBlogs: BlogInterface[] = [
 
 const FullPageBlog: NextPage = () => (
     <>
-        <section className='hero has-background-white-bis is-fullheight-with-navbar box'>
-            <div className='hero-body'>
-                <div className='container'>
-                    <div className='mb-6'>
-                        <p className='is-size-2'>Recent blogs</p>
-                    </div>
-                    <div className=''>
-                        {ViewBlogs.map(event => (
-                            <BlogpageCard key={event.Title} {...event} />
-                        ))}
+        <div className='container'>
+            <div className='column is-half is-offset-3'>
+                <div className='mb-6'>
+                    <p className='is-size-2 mt-4'>Recent blogs</p>
+                </div>
+                <div className=''>
+                    {ViewBlogs.map(event => (
+                        <BlogpageCard key={event.Title} {...event} />
+                    ))}
 
-                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     </>
 )
 
